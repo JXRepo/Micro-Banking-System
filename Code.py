@@ -92,7 +92,6 @@ class BankingSystem:
 
         return new_res
 
-
     def pay(self, timestamp, account_id, amount):
         self.check_pending_transactions(timestamp)
         if amount <= 0:
@@ -130,7 +129,6 @@ class BankingSystem:
         for payment_id in pending_transaction_keys_that_need_to_delete:
             self.pending_transactions.pop(payment_id)
 
-
     def get_payment_status(self, timestamp, account_id, payment):
         self.check_pending_transactions(timestamp)
 
@@ -145,7 +143,6 @@ class BankingSystem:
             return "IN_PROGRESS"
         else:
             return "CASHBACK_RECEIVED"
-
 
     def merge_accounts(self, timestamp, account_id_1, account_id_2):
 
@@ -174,7 +171,6 @@ class BankingSystem:
         self.history[account_id_1].append([timestamp, self.accounts[account_id_1]])
         self.history[account_id_2].append([timestamp, float("inf")])
         return True
-
 
     def get_balance(self, timestamp, account_id, time_at):
         self.check_pending_transactions(timestamp)
@@ -222,6 +218,7 @@ class BankingSystem:
         return self.history[account_id][idx][1]
 
 
+
 bs = BankingSystem()
 print(bs.create_account(1, "account1"))  # True
 print(bs.create_account(2, "account2"))  # True
@@ -250,11 +247,6 @@ print(bs.get_balance(16, "account1", 11))  # 3800
 print(bs.deposit(5 + M, "account1", 100))  # 3906
 
 
-
-
-
-
-
 # print(bs.create_account(1, "account1"))  # True
 # print(bs.deposit(2, "account1", 1000))  # 1000
 # print(bs.pay(3, "account1", 300))  # "payment1"
@@ -264,13 +256,7 @@ print(bs.deposit(5 + M, "account1", 100))  # 3906
 # print(bs.get_balance(6 + M, "account1", 3 + M))  # 706
 
 
-
-
-
-
-
 print("-------------------------------------------------------------------------------------------------------------------------")
-
 
 
 print("total accounts: " + str(bs.accounts))
@@ -278,27 +264,3 @@ print("outgoing dictionary:" + str(bs.outgoings))
 print("pending transactions: " + str(bs.pending_transactions))
 print("visited payment: " + str(bs.visited_payment))
 print("history: " + str(bs.history))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

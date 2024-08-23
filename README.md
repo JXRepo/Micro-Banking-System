@@ -18,4 +18,4 @@ This Micro Banking System serves as a simplified prototype for a real-world bank
 
 4. **Account Merging and Historical Balance Check:**
    - Merge two accounts while **retaining both accounts' balances and transaction histories**
-   - Trace transaction histories for a **past timestamp**
+   - Trace transaction histories for a **past timestamp (Advanced Binary Search algorithm used to improve searching efficiency)**

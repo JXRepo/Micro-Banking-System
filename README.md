@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This Micro Banking System serves as a simplified prototype for a real-world banking system and offers extensibility for future enhancements. The system supports the following features:
+This Micro Banking System created by **Python** serves as a simplified prototype for a real-world banking system and offers extensibility for future enhancements. The system supports the following features:
 
 1. **Basic Features:**
    - Create new accounts

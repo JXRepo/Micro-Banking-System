@@ -10,7 +10,7 @@ This Micro Banking System serves as a simplified prototype for a real-world bank
    - Transfer money between two accounts
 
 2. **Ranking Feature:**
-   - Rank accounts based on outgoing transactions for a specified number of top accounts (**Top-K algorithm knowledge used**)
+   - Rank accounts based on outgoing transactions for a specified number of top accounts (**Top-K algorithm with Heap and rewriting __lt__method used**)
 
 3. **Cashback Feature:**
    - Schedule payments with cashback (**Cashback is back to the account 24 hours after the payment occurs**)
